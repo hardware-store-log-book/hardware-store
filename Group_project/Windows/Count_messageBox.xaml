@@ -1,0 +1,23 @@
+﻿<Window x:Class="Group_project.Windows.Count_messageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group_project.Windows"
+        mc:Ignorable="d"
+        Title="Count_messageBox" Height="400" Width="648.5" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" WindowStyle="None" Background="#FF67A0AE" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Group_project;component/Resources/fon.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Rectangle Fill="#B2C5FAFF" Height="44" VerticalAlignment="Top" Stroke="#FF0D555D"/>
+        <Image x:Name="Close_button" HorizontalAlignment="Left" Height="30" Margin="608,6,0,0" VerticalAlignment="Top" Width="30" Source="/Group_project;component/Resources/close2.png" Cursor="Hand" MouseLeftButtonDown="Close_button_MouseLeftButtonDown"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="30" Margin="10,6,0,0" VerticalAlignment="Top" Width="30" Source="/Group_project;component/Resources/logo.png" Cursor="Hand"/>
+        <Label Content="Выбор количества товара | Менеджер" HorizontalAlignment="Left" Margin="45,3,0,0" VerticalAlignment="Top" FontSize="20" Width="387" FontWeight="Bold" Foreground="#FF00146E" Height="39"/>
+        <Rectangle Fill="#B2C5FAFF" Height="341" VerticalAlignment="Top" Stroke="#FF0D555D" Margin="10,49,0,0" HorizontalAlignment="Left" Width="613"/>
+        <TextBlock Margin="48,75,0,0" TextWrapping="Wrap" Text="Введите количество товара" FontSize="36" Foreground="#FF00146E" FontWeight="Bold" VerticalAlignment="Top" Height="61" TextAlignment="Center" HorizontalAlignment="Left" Width="540"/>
+        <TextBox x:Name="Count_textbox" HorizontalAlignment="Left" Height="75" Margin="176,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" FontSize="48" FontWeight="Bold" TextAlignment="Center" BorderBrush="#FF00146E" BorderThickness="3" Foreground="#FF00146E" PreviewTextInput="Count_textbox_PreviewTextInput"/>
+        <Button x:Name="OK_button" Margin="176,301,0,0" VerticalAlignment="Top" Height="62" Background="#7FFFFFFF" BorderBrush="#FF000B4D" BorderThickness="3" Foreground="#FF00146E" FontWeight="Bold" HorizontalAlignment="Left" Width="276" Content="OK" FontSize="36" Click="OK_button_Click"/>
+        <TextBlock x:Name="ProductName_label" Margin="45,135,0,0" TextWrapping="Wrap" FontSize="20" Foreground="#FF00146E" FontWeight="Bold" VerticalAlignment="Top" Height="33" TextAlignment="Center" HorizontalAlignment="Left" Width="540"/>
+    </Grid>
+</Window>
